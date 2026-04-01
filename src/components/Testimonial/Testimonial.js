@@ -38,8 +38,8 @@ export default function Testimonial() {
                 }}
                 modules={[Navigation]} className="mySwiper">
                 {review.map((item) => (
-                    <SwiperSlide className='bg-zinc-100 rounded-lg p-8' >
-                        <div className='flex items-center gap-5 '>
+                    <SwiperSlide   className='bg-zinc-100 rounded-lg p-8' >
+                        <div  className='flex items-center gap-5 '>
                             <div className='  w-16 h-16 outline  outline-offset-4 rounded-full outline-2  outline-orange-500  overflow-hidden  '>
                                 <img src={item.image} className=' w-full h-full' />
                             </div>
@@ -49,7 +49,7 @@ export default function Testimonial() {
                                 <h3 className='text-zinc-600 '>{item.professional}</h3>
                                 <span className='flex text-yellow-400 text-lg gap-1'>
                                     {Array.from({ length: item.rating }, (_, index) => (
-                                        <FaStar />
+                                        <FaStar key={index} />
                                     ))}
                                 </span>
                             </div>

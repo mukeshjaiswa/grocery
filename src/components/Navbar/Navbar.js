@@ -3,6 +3,8 @@ import { FaHeart } from "react-icons/fa";
 import { HiShoppingBag } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
 import { TbMenu2, TbMenu3 } from "react-icons/tb";
+import { Link } from 'react-router-dom';
+import { RxCross1 } from "react-icons/rx";
 
 
 export default function Navbar() {
@@ -23,21 +25,21 @@ export default function Navbar() {
 
             <div className={`max-w-[1200px] mx-auto bg-white h-[12vh] md:h-[14vh] md:p-10 p-5      flex justify-between items-center `}>
                 {/* desktop view */}
-                <a href="#" className='text-2xl font-bold text-zinc-800 '>
+                <Link to="/" className='text-2xl font-bold text-zinc-800 '>
                     Gr<span className='text-orange-500 uppercase'>o</span>cify
-                </a>
+                </Link>
                 <ul className='md:flex hidden items-center gap-10' >
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-orange-600'>Home</a>
+                        <Link to="/" className='font-bold tracking-wide text-orange-600'>Home</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>About Us</a>
+                        <Link to="/about" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>About Us</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Process</a>
+                        <Link to="/process" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Process</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Contact</a>
+                        <Link to="/contact" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Contact</Link>
                     </li>
                 </ul>
 
@@ -49,34 +51,34 @@ export default function Navbar() {
                             <CiSearch />
                         </button>
                     </div>
-                    <a href="#" className='text-zinc-800 text-2xl'>
+                    <Link to="/" className='text-zinc-800 text-2xl'>
                         <FaHeart />
-                    </a>
-                    <a href="#" className='text-zinc-800 text-2xl'>
+                    </Link>
+                    <Link to="/" className='text-zinc-800 text-2xl'>
                         <HiShoppingBag />
-                    </a>
+                    </Link>
                     {/* Nav Action */}
-                    <a href="#" onClick={toggle} className='text-3xl md:hidden  text-zinc-800'>
-                        {menuopen ? <TbMenu3 /> :
+                    <Link to="#" onClick={toggle} className='text-3xl md:hidden  text-zinc-800'>
+                        {menuopen ? <RxCross1 /> :
                             <TbMenu2 />
                         }
-                    </a>
+                    </Link>
 
                 </div>
                 {/* Mobile menu */}
 
-                <ul className={`flex flex-col p-10 mx-auto md:mx-auto bg-orange-500/50 backdrop-blur-xl rounded-md gap-x-15 gap-y-10 absolute top-24  md:hidden items-center  transform -translate-x-1/2 transition-all duration-300 ${menuopen ? 'left-1/2' : '-left-1/2'}`} >
+                <ul className={`flex flex-col p-10 mx-auto md:mx-auto bg-orange-400/30 backdrop-blur-md rounded-md gap-x-15 gap-y-10 absolute top-24  md:hidden items-center  transform -translate-x-1/2 transition-all duration-300 ${menuopen ? 'left-1/2' : '-left-[80%]'}`} >
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-orange-600'>Home</a>
+                        <Link to="/" className='font-bold tracking-wide text-orange-600'>Home</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>About Us</a>
+                        <Link to="/" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>About Us</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Process</a>
+                        <Link to="/" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Process</Link>
                     </li>
                     <li>
-                        <a href="#" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Contact</a>
+                        <Link to="/" className='font-bold tracking-wide text-zinc-800 hover:text-orange-600'>Contact</Link>
                     </li>
                     <div className='flex items-center md:hidden border-2 border-orange-500 p-1 rounded-full'>
                         <input type="text" name='text' placeholder='Search...' className='outline-none bg-transparent h-[5vh] px-2 ' autoComplete='off' />

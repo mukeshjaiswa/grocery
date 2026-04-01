@@ -47,7 +47,7 @@ export default function Footer() {
                         Questions or Feedback? <br />
                         we'd love to here from you.
                     </p>
-                    <div className='mt-6  md:w-auto w-[250px] w  border flex bg-white rounded-lg p-1'>
+                    <div className='mt-6  md:w-auto w-[250px] w  border flex bg-white rounded-lg p-1 items-center '>
                         <input type="email" name="email" id="email" placeholder='Email Address' autoComplete="off" className='px-2  bg-transparent  h-[6vh] focus:outline-none' />
                         <button className='bg-gradient-to-b from-orange-400 to-orange-500 flex items-center rounded-lg text-white text-2xl  p-2'>
                             <MdNavigateNext />

@@ -4,6 +4,7 @@ import Foodcat from '../../assest/fruits-and-veggies.png'
 import Meatcat from '../../assest/meat-and-seafood.png'
 import Dairycat from '../../assest/dairy-and-eggs.png'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 export default function Category(props) {
 
@@ -20,7 +21,7 @@ export default function Category(props) {
                             <h2 className='text-zinc-800 text-2xl font-bold'>{cart.title}</h2>
                             <p className='text-zinc-600  mt-3 mb-9'>{cart.description}</p>
 
-                            <Button content='See All' />
+                            <Link to={cart.path} className='bg-gradient-to-b from-orange-400 to-orange-600 px-8 py-3 rounded-md text-white text-lg transition-all duration-300 hover:to-orange-700 hover:scale-105 cursor-pointer' >See All</Link>
                         </div>
                     </div>
                 ))}
@@ -34,19 +35,25 @@ const category = [
         id: 1,
         title: 'Fruits & Veggies',
         description: 'Fresh, organic produce sourced daily from local farms. Explore a wide range of seasonal fruits and crisp vegetables.',
-        image: Foodcat
+        image: Foodcat,
+        path:'/shopbycategory/fruitsandveggies',
+        category:'fruits'
     },
     {
         id: 2,
         title: 'Dairy & Eggs',
         description: 'Wholesome dairy products and free-range eggs. From creamy milk and yogurt to artisanal cheeses.',
-        image: Dairycat
+        image: Dairycat,
+        path:'/shopbycategory/dairyandeggs',
+        category:'Dairy'
     },
     {
         id: 3,
         title: 'Meat & SeaFood',
         description: 'High-quality, responsibly sourced meat and seafood. Choose from fresh cuts, marinated options, and more.',
-        image: Meatcat
+        image: Meatcat,
+        path:'/shopbycategory/meatandseafood',
+        categoruy:'SeaFood'
     },
 
 ]

@@ -12,7 +12,7 @@ import Values from '../Values/Values'
 export default function Home() {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Hero />
             <Category />
             <Values />
@@ -20,7 +20,7 @@ export default function Home() {
             <Discount />
             <Process/>
             <Testimonial/>
-            <Footer/>
+            {/* <Footer/> */}
 
 
         </div>

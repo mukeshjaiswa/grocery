@@ -12,7 +12,7 @@ export default function Values() {
                 <div className='min-h-100 gap-5 md:gap-0 flex flex-col justify-between  '>
                     {contentValues.slice(0, 2).map((item) => (
 
-                        <div className='flex md:flex-row-reverse items-center'>
+                        <div key={item.id} className='flex md:flex-row-reverse items-center'>
                             <div className='bg-gradient-to-b from-orange-400 to-orange-500 text-white text-2xl rounded-full flex items-center px-4  justify-center w-[50px] h-[50px]'>
                                 {item.icon}
                             </div>
@@ -34,7 +34,7 @@ export default function Values() {
                 <div className='min-h-100 gap-5 md:gap-0 flex flex-col justify-between  '>
                     {contentValues.slice( 2).map((item) => (
 
-                        <div className='flex items-center '>
+                        <div key={item.id} className='flex items-center '>
                             <div className='bg-gradient-to-b from-orange-400 to-orange-500 text-white text-2xl rounded-full flex items-center px-4  justify-center w-[50px] h-[50px]'>
                                 {item.icon}
                             </div>

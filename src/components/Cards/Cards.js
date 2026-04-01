@@ -3,6 +3,7 @@ import { FaHeart, FaPlus } from 'react-icons/fa'
 import Button from '../Button/Button'
 
 export default function Cards(props) {
+    
     return (
         <div className='bg-zinc-100  p-5 flex flex-col gap-2'>
             {/* Top header of cards */}
