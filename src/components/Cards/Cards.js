@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 export default function Cards(props) {
     
     return (
-        <div className='bg-zinc-100  p-5 flex flex-col gap-2'>
+        <div className='bg-zinc-100 hover:scale-105 cursor-pointer  p-5 flex flex-col gap-2'>
             {/* Top header of cards */}
             <div className='flex  justify-between'>
                 <span className='text-3xl text-zinc-400 cursor-pointer'>

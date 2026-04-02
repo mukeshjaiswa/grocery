@@ -8,6 +8,7 @@ import Category from './components/Category/Category';
 import CategoryPage from './components/categorypage/CategoryPage';
 import Footer from './components/Footer/Footer';
 import AllProducts from './components/Allproducts/AllProducts';
+import ContactPage from './components/Contact/ContactPage';
 
 function Layout() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/shopbycategory/:categoryid' element={<CategoryPage />}
           />
           <Route path='/allproducts' element={<AllProducts />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Route>
 
 
