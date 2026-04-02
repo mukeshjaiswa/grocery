@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 export default function Hero() {
     return (
         <section>
-            <div className='max-w-[1200px] h-screen  mx-auto md:p-10 p-5 mt-20 md:flex items-center gap-3 '>
+            <div className='max-w-[1200px] h-screen  mx-auto md:p-10 p-5 mt-[100px] md:mt-20 md:flex items-center gap-3 '>
                 {/* content section */}
                 <div className='flex-1 '>
                     <span className='bg-orange-100 text-orange-500 px-5 py-2 rounded-full '>Export Best Quality...</span>

@@ -29,11 +29,11 @@ export default function ContactPage() {
         <div className='mt-[82px]'>
             <Banner title='Contact Us' />
 
-            <div className='bg-blue-100 my-10  py-10  '>
+            <div className='bg-blue-100 my-10  py-10 mx-2 px-4 md:px-10  '>
                 <h2 className='text-center text-3xl font-bold text-zinc-800 uppercase'> Contact Form</h2>
-                <div className='flex gap-5 max-w-[1200px] mx-auto py-10'>
+                <div className='flex flex-col md:flex-row gap-10 md:gap-5 max-w-[1200px] mx-auto py-10'>
                     {/* Office details */}
-                    <div className='w-full flex flex-col gap-5  '>
+                    <div className='w-full flex flex-col gap-5   '>
                         <h1 className='text-zinc-900 text-2xl font-bold'>Get in Touch  </h1>
                         <p className='text-zinc-600'> Have questions about our services? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
 

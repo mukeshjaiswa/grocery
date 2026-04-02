@@ -9,6 +9,7 @@ import CategoryPage from './components/categorypage/CategoryPage';
 import Footer from './components/Footer/Footer';
 import AllProducts from './components/Allproducts/AllProducts';
 import ContactPage from './components/Contact/ContactPage';
+import About from './components/About/About';
 
 function Layout() {
   return (
@@ -30,6 +31,7 @@ function App() {
           />
           <Route path='/allproducts' element={<AllProducts />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='/about' element={<About />} />
         </Route>
 
 
