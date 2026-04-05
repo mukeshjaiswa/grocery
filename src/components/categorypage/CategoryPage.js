@@ -41,7 +41,7 @@ export default function CategoryPage() {
             </div>
             <div className='max-w-[1200px] mx-auto py-10 px-10 grid grid-cols-1 md:grid-cols-3 gap-8 mt-10'>
                 {items.map((product) => (
-                    <Cards key={product.id} image={product.image} title={product.name} price={product.price} category={product.category} />
+                    <Cards key={product.id} productimage={product.productimage} title={product.name} price={product.price} category={product.category} />
                 ))}
             </div>
            

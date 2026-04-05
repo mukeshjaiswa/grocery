@@ -41,7 +41,7 @@ export default function Testimonial() {
                     <SwiperSlide   className='bg-zinc-100 rounded-lg p-8' >
                         <div  className='flex items-center gap-5 '>
                             <div className='  w-16 h-16 outline  outline-offset-4 rounded-full outline-2  outline-orange-500  overflow-hidden  '>
-                                <img src={item.image} alt='image' className=' w-full h-full' />
+                                <img src={item.productimage} alt='productimage' className=' w-full h-full' />
                             </div>
                             
                             <div className=''>
@@ -74,7 +74,7 @@ const review = [
         professional: 'Food Blogger',
         rating: 3,
         para: 'FreshBasket is my go - to store for all grocery needs.Their produce is always fresh, and the delivery is super fast.I love the user - friendly interface and variety of organic options!',
-        image: Customer1
+        productimage: Customer1
     },
     {
         id: 2,
@@ -82,7 +82,7 @@ const review = [
         professional: 'Chef',
         rating: 4,
         para: 'As a chef, quality ingredients are everything.FreshBasket consistently delivers the best vegetables, herbs, and pantry staples.Highly recommended!',
-        image: Customer2
+        productimage: Customer2
     },
     {
         id: 3,
@@ -90,7 +90,7 @@ const review = [
         professional: 'Model',
         rating: 2,
         para: "Shopping online with FreshBasket has saved me so much time.I trust them for my family's weekly groceries—always fresh, affordable, and reliable.",
-        image: Customer3
+        productimage: Customer3
     },
     {
         id: 4,
@@ -98,7 +98,7 @@ const review = [
         professional: 'Fitness Coach',
         rating: 5,
         para: 'I appreciate the selection of healthy foods and clean - label products.FreshBasket has been a great partner in my wellness journey!',
-        image: Customer4
+        productimage: Customer4
     },
     {
         id: 5,
@@ -106,7 +106,7 @@ const review = [
         professional: 'Nutritionist',
         rating: 4,
         para: 'FreshBasket offers high - quality groceries at reasonable prices.Their organic section is impressive, and their customer service is top - notch.',
-        image: Customer5
+        productimage: Customer5
     },
 
 ]

@@ -26,7 +26,7 @@ export default function Products() {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10'>
                 {filterproduct.slice(0, 6).map((product) => (
-                    <Cards key={product.id} image={product.image} title={product.name} price={product.price} category={product.category} />
+                    <Cards key={product.id} image={product.productimage} title={product.name} price={product.price} category={product.category} />
                 ))}
             </div>
 
