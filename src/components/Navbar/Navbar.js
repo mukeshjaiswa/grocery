@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { FaHeart } from "react-icons/fa";
 import { HiShoppingBag } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
-import { TbMenu2, TbMenu3 } from "react-icons/tb";
+import { TbMenu2 } from "react-icons/tb";
 import { Link, useLocation } from 'react-router-dom';
 import { RxCross1 } from "react-icons/rx";
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Heading from '../Heading/Heading'
 import ProductList from '../../components/ProductList/ProductList'
 import Cards from '../Cards/Cards'
-import Button from '../Button/Button'
+
 import { Link } from 'react-router-dom'
 
 export default function Products() {

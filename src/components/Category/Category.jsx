@@ -3,7 +3,7 @@ import Heading from '../Heading/Heading'
 import Foodcat from '../../assest/fruits-and-veggies.png'
 import Meatcat from '../../assest/meat-and-seafood.png'
 import Dairycat from '../../assest/dairy-and-eggs.png'
-import Button from '../Button/Button'
+
 import { Link } from 'react-router-dom'
 
 export default function Category(props) {
@@ -15,7 +15,7 @@ export default function Category(props) {
                 {category.map((cart) => (
                     <div key={cart.id} className='flex-1 hover:scale-105 cursor-pointer basis-[300px] '>
                         <div className='w-full min-h-[30vh]  relative -mb-10'>
-                            <img src={cart.image} className='absolute bottom-0' />
+                            <img src={cart.image} alt='image' className='absolute bottom-0' />
                         </div>
                         <div className='bg-zinc-100 pt-20 p-8 rounded-md '>
                             <h2 className='text-zinc-800 text-2xl font-bold'>{cart.title}</h2>

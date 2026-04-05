@@ -17,7 +17,7 @@ export default function Cards(props) {
             </div>
             {/* cards images */}
             <div className='w-full h-[200px] flex items-center '>
-                <img src={props.image} className='w-full h-full object-contain' />
+                <img src={props.image} alt='image' className='w-full h-full object-contain' />
             </div>
             {/* cards content */}
             <div className='flex flex-col gap-3 justify-center items-center'>

@@ -29,7 +29,7 @@ export default function Banner({title}) {
             setBannerImg(Fruitsimg)
         }
 
-    })
+    },[categorytitle])
     return (
         <>
             <Navbar />

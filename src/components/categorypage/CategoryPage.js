@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Banner from '../Banner/Banner'
-import Navbar from '../Navbar/Navbar'
+
 import { useParams } from 'react-router-dom';
 import ProductList from '../ProductList/ProductList'
 import Cards from '../Cards/Cards';
-import Footer from '../Footer/Footer';
+
 
 export default function CategoryPage() {
     const { categoryid } = useParams();

@@ -28,7 +28,7 @@ export default function Values() {
                 </div>
                 {/* middle image */}
                 <div className='md:flex min-w-1/2 hidden'>
-                    <img src={Basket} />
+                    <img src={Basket} alt='image' />
                 </div>
                 {/* right values */}
                 <div className='min-h-100 gap-5 md:gap-0 flex flex-col justify-between  '>

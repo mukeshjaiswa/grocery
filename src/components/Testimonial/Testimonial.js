@@ -41,7 +41,7 @@ export default function Testimonial() {
                     <SwiperSlide   className='bg-zinc-100 rounded-lg p-8' >
                         <div  className='flex items-center gap-5 '>
                             <div className='  w-16 h-16 outline  outline-offset-4 rounded-full outline-2  outline-orange-500  overflow-hidden  '>
-                                <img src={item.image} className=' w-full h-full' />
+                                <img src={item.image} alt='image' className=' w-full h-full' />
                             </div>
                             
                             <div className=''>

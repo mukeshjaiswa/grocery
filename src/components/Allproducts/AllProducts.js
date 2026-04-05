@@ -4,7 +4,7 @@ import Cards from '../Cards/Cards'
 import ProductList from '../ProductList/ProductList'
 
 export default function AllProducts() {
-    const [products, setProducts] = useState(ProductList)
+    const [products] = useState(ProductList)
 
     return (
         <div className='mt-[80px]'>

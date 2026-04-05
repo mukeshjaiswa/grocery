@@ -1,10 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
-import Banner from './components/Banner/Banner';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import Category from './components/Category/Category';
 import CategoryPage from './components/categorypage/CategoryPage';
 import Footer from './components/Footer/Footer';
 import AllProducts from './components/Allproducts/AllProducts';
@@ -27,15 +25,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<Home />} />
-          <Route path='/shopbycategory/:categoryid' element={<CategoryPage />}
-          />
+          <Route path='/shopbycategory/:categoryid' element={<CategoryPage />}/>
           <Route path='/allproducts' element={<AllProducts />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/about' element={<About />} />
         </Route>
-
-
-
       </Routes>
 
     </Router>

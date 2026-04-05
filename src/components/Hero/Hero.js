@@ -15,7 +15,7 @@ export default function Hero() {
                 </div>
                 {/* image section */}
                 <div className='flex-1'>
-                    <img src={Grocery} alt="Grocery image" />
+                    <img src={Grocery} alt="Grocery-image" />
                 </div>
 
             </div>
